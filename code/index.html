@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Home</title>
+  <style>
+    html {
+      background: linear-gradient(to bottom, #1f0027, #1b0030, #490081);
+      height: 100%;
+      user-select: none;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      flex-direction: column;
+    }
+
+    .carousel-container {
+      width: 80%;
+      overflow: hidden;
+      border: none;
+      padding: 10px;
+      position: relative;
+      box-shadow: 0px 0px 90px 30px black;
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 1s ease;
+      will-change: transform;
+
+    }
+
+    img {
+      width: 1300px;
+      height: 800px;
+      margin: 0 10px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 80px 30px rgb(17, 0, 13);
+    }
+    img:hover{
+      opacity: 0.7;
+    }
+
+    .control-button {
+      background-color: #2a0064;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 108px;
+      cursor: pointer;
+      border-radius: 100px;
+      margin-top: 20px;
+      padding: 90px;
+      padding-block:380px ;
+      position: absolute;
+      top: 1020px;
+      right: 250px;
+      box-shadow: 0px 0px 90px 30px black;
+    }
+
+
+    .control-button:hover {
+      background-color: #21006e;
+
+    }
+  </style>
+</head>
+<header>
+  <div class="navigation_bar">
+    <i class="glyphicon glyphicon-heart"></i>
+    <i class="glyphicon glyphicon-remove"></i>
+    <i class="glyphicon glyphicon-user"></i>
+    <i class="glyphicon glyphicon-envelope"></i>
+    <i class="glyphicon glyphicon-thumbs-up"></i>
+  </div>
+</header>
+<body>
+  <div class="carousel-container">
+    <div class="carousel">
+      <!-- Imagens duplicadas para efeito de loop contínuo -->
+      <img src="https://m.media-amazon.com/images/S/pv-target-images/2f01f3ea957b378822c7aac932885fb1712799126fcd9bd192e74fc4d06dd545.jpg" draggable="false" alt="">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyW3UkRvAtSy-UUhFTtB2-22todMkph60gww&s" draggable="false" alt="">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtqpQe5BO1aVZehVLUEPGUg7K535YaRiCywg&s" draggable="false" alt="">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6oRj1XRXOHKP_Dvodj7_n-XOcYlNwJgVJIA&s" draggable="false" alt="">
+      <img src="https://tm.ibxk.com.br/2024/06/20/20162942209218.jpg" draggable="false" alt="">
+      <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpg" draggable="false" alt="">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReymymgD_tIXEZA0l1satVGRoyqcbRDERyOw&s" draggable="false" alt="">
+      <!-- Duplicação das imagens para efeito contínuo -->
+      <img src="https://m.media-amazon.com/images/S/pv-target-images/2f01f3ea957b378822c7aac932885fb1712799126fcd9bd192e74fc4d06dd545.jpg" draggable="false" alt="">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyW3UkRvAtSy-UUhFTtB2-22todMkph60gww&s" draggable="false" alt="">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtqpQe5BO1aVZehVLUEPGUg7K535YaRiCywg&s" draggable="false" alt="">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6oRj1XRXOHKP_Dvodj7_n-XOcYlNwJgVJIA&s" draggable="false" alt="">
+      <img src="https://tm.ibxk.com.br/2024/06/20/20162942209218.jpg" draggable="false" alt="">
+      <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpg" draggable="false" alt="">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReymymgD_tIXEZA0l1satVGRoyqcbRDERyOw&s" draggable="false" alt="">
+    </div>
+  </div>
+
+  <button class="control-button" onclick="rotateCarousel()">&#8594;</button>
+
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const images = document.querySelectorAll('.carousel img');
+    const imageWidth = images[0].clientWidth + 20; // Largura da imagem + margem
+    let currentIndex = 0;
+
+    function rotateCarousel() {
+      const totalImages = images.length / 2; // Considerando as imagens duplicadas
+      currentIndex = (currentIndex + 1) % totalImages; // Gira para a próxima imagem
+      const distance = currentIndex * imageWidth; // Calcula a distância a ser percorrida
+      carousel.style.transform = `translateX(${-distance}px)`;
+
+      // Verifica se estamos na última imagem e "reseta" para criar o loop contínuo
+      if (currentIndex === totalImages - 1) {
+        setTimeout(() => {
+          carousel.style.transition = 'none'; // Remove a transição para que o salto não seja visível
+          currentIndex = 0; // Reseta para o início
+          carousel.style.transform = `translateX(0px)`; // Volta para a primeira imagem instantaneamente
+          setTimeout(() => {
+            carousel.style.transition = 'transform 1s ease'; // Reativa a transição para o próximo giro
+          }, 50); // Pequeno atraso para garantir que a transição seja aplicada corretamente
+        }, 1000); // Atraso após a transição suave para reiniciar o loop
+      }
+    }
+  </script>
+</body>
+</html>
