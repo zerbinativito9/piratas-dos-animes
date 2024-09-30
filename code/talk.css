@@ -1,10 +1,10 @@
-html{
-    background: linear-gradient(to bottom, #1f0027,#1b0030, #490081);
+html {
+    background: linear-gradient(to bottom, rgb(31, 0, 39), rgb(27, 0, 48), rgb(73, 0, 129));
     height: 100%;
     user-select: none;
 }
 
-img{
+img {
     width: 780px;
     height: 500px;
     margin: 38px;
@@ -12,13 +12,77 @@ img{
     opacity: 0.17;
     box-shadow: 0px 0px 80px 20px rgb(39, 0, 22);
 }
-form{
-    border: none;
-    outline: none;
-    border-radius: 15px;
-    box-shadow: #1b0030;
-    background-color: white;
-    color: black;
-    
+
+.form {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: rgb(246, 246, 246);
+    padding: 200px 100px 100px;
+    border-radius: 30px;
 }
 
+input {
+    font-size: 60px;
+    margin: 70px;
+    padding-inline: 30px;
+    border-radius: 40px;
+}
+
+label {
+    font-size: 90px;
+    position: absolute;
+    bottom: 950px;
+    left: 450px;
+}
+
+.message-box {
+    font-size: 600px;
+}
+
+.submit input {
+    position: relative;
+    left: 65px;
+    top: 5px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(33, 147, 170);
+    color: aliceblue;
+}
+
+.submit input:hover {
+    background-color: hsl(179, 54%, 32%);
+    color: #dcdcdc;
+}
+
+input {
+    position: relative;
+    bottom: 150px;
+    padding: 5px;
+    padding-inline: 55px;
+    border-radius: 20px;
+    border-color: rgb(81, 76, 76);
+    text-align: center;
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 50px 60px;
+    background-color: #071dc4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1410ec72;
+}
