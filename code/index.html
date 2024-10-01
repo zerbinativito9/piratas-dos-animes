@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="ind">
-  <title>Home</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Home: Seu Porto seguro para Animes de Qualidade</title>
   <style>
     html {
       background: linear-gradient(to bottom, #1f0027, #1b0030, #490081);
       height: 100%;
-      user-select: none;
     }
 
     * {
@@ -19,6 +22,7 @@
     }
 
     body {
+      background: linear-gradient(to bottom, #1f0027, #1b0030, #490081);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -27,151 +31,90 @@
       flex-direction: column;
     }
 
-    .carousel-container {
-      width: 80%;
-      overflow: hidden;
-      border: none;
-      padding: 10px;
-      position: relative;
-      box-shadow: 0px 0px 90px 30px black;
-    }
+.navigation_bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333; /* cinza chumbo */
+  display: flex;
+  justify-content: space-around; /* espaço igual entre os ícones */
+  align-items: center;
+  padding: 10px 0;
+  z-index: 1000; /* para garantir que fique acima do conteúdo */
+}
 
-    .carousel {
-      display: flex;
-      transition: transform 1s ease;
-      will-change: transform;
-
-    }
-
-    img {
-      width: 1300px;
-      height: 800px;
-      margin: 0 10px;
-      border-radius: 20px;
-      box-shadow: 0px 0px 80px 30px rgb(17, 0, 13);
-    }
-    img:hover{
-      opacity: 0.7;
-    }
-
-    .control-button {
-      background-color: #2a0064;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 108px;
-      cursor: pointer;
-      border-radius: 100px;
-      margin-top: 20px;
-      padding: 90px;
-      padding-block:380px ;
-      position: absolute;
-      top: 1020px;
-      right: 250px;
-      box-shadow: 0px 0px 90px 30px black;
-    }
-
-
-    .control-button:hover {
-      background-color: #21006e;
-
+.navigation_bar i {
+  color: rgb(153, 68, 234); /* cor dos ícones */
+  font-size: 200px; /* tamanho dos ícones */
+  margin: 20px 0; /* distância entre os ícones e a barra */
+}
+  </style>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Home: Seu Porto Seguro para Animes de Qualidade</title>
+  <style>
+    html {
+      background: linear-gradient(to bottom, #1f0027, #1b0030, #490081);
+      height: 100%;
+      user-select: none;
     }
   </style>
 </head>
 <header>
   <div class="navigation_bar">
-    <i class="glyphicon glyphicon-heart"></i>
-    <i class="glyphicon glyphicon-remove"></i>
-    <i class="glyphicon glyphicon-user"></i>
-    <i class="glyphicon glyphicon-envelope"></i>
-    <i class="glyphicon glyphicon-thumbs-up"></i>
+    <a href="index.html"><i class="fas fa-home"></i></a>
+    <i class="fas fa-heart"></i>
+    <a href="talk.html"><i class="fas fa-user"></i></a>
+    <i class="fas fa-thumbs-up"></i>
   </div>
 </header>
 <body>
-  <div class="">   
-    <img src="https://m.media-amazon.com/images/S/pv-target-images/2f01f3ea957b378822c7aac932885fb1712799126fcd9bd192e74fc4d06dd545.jpg" draggable="false" alt="">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyW3UkRvAtSy-UUhFTtB2-22todMkph60gww&s" draggable="false" alt="">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtqpQe5BO1aVZehVLUEPGUg7K535YaRiCywg&s" draggable="false"alt="">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6oRj1XRXOHKP_Dvodj7_n-XOcYlNwJgVJIA&s" draggable="false"alt="">
-    <img src="https://tm.ibxk.com.br/2024/06/20/20162942209218.jpg" daggrable="false" alt="">
-    <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpg" draggable="false" alt="">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReymymgD_tIXEZA0l1satVGRoyqcbRDERyOw&s" draggable="false" alt=""><p></p>
-
-    <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/0273e80242d80b0218f640e038269c18.jpg" draggable="false" alt="">
-    <img src="https://m.media-amazon.com/images/S/pv-target-images/67a2269439699328f7e2eb9772cb592daf357e96c6c5855ca17fbbcdf3b131ba.jpg" draggable="false" alt="">
-    <img src="https://a.storyblok.com/f/178900/1920x1080/2901bf8bc8/konosuba-season-3-key-art-wide.png/m/1200x0/filters:quality(95)format(webp)" draggable="false"alt="">
-    <img src="https://images4.alphacoders.com/135/thumb-1920-1355110.jpeg" draggable="false" alt="">
-    <img src="https://t.ctcdn.com.br/nlrrkirYLPxyQouu7Q2MHTd6o1E=/640x360/smart/i814909.jpeg" draggable="false" alt="">
-    <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/04/04/516525525-i876631.jpeg" draggable="false" alt="">
-    <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/07/20/pokemon-mestre-anime-qxtbzrqh66us.jpg" draggable="false" alt=""><p></p>
-
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSX_ptDQY-w4dSUj01yHWGZL5z37QFa-0HXA&s" draggable="false" alt="">
-    <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=640,height=360/catalog/crunchyroll/b7d5c3e0703e59c63c5fd06f86396f8d.jpe"draggable="false" alt="">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxFfQ3Ld2ZkHJpIcPmZ3qdf0cNMj_2078X8g&s" draggable="false"alt="">
-    <img src="https://m.media-amazon.com/images/S/pv-target-images/0c9ce4e037546965d6b1f3807e9f8f549a113d32066b2bdb22ada5d179c0d89a.jpg" draggable="false" alt="">
-    <img src="https://i0.wp.com/anmtv.com.br/wp-content/uploads/blood-c-1.jpg?resize=769%2C486&ssl=1" draggable="false"alt="">
-    <img src="https://m.media-amazon.com/images/S/pv-target-images/82aff91a387ad745a6480e2af852a3f950e86bb9c9663c5858ba57c3397cfe1e.jpg" draggable="false">
-    <img src="https://m.media-amazon.com/images/S/pv-target-images/a5c94b0ad6ce394bb4c2f80df2bed88b46a5f08a576066513ae697009e429555.jpg" draggable="false" alt=""><p></p>
-  
-    <img src="https://th.bing.com/th/id/OIP.dZi1xBEnPneHEpXPqmpZrQHaFO?rs=1&pid=ImgDetMain" draggable="false" alt="">
-    <img src="https://th.bing.com/th/id/R.a143b01405e458f468b8db326922e690?rik=r3Yb3q0fBeURtw&pid=ImgRaw&r=0"draggable="false" alt="">
-    <img src="https://otakusnotes.com/wp-content/uploads/2022/10/main-character-in-Kakegurui-featured-image.jpg">
-    <img src="https://th.bing.com/th/id/OIP.r0Kdan4y22Q_OmrMKdSu7QHaEK?rs=1&pid=ImgDetMain" draggable="false" alt="">
-    <img src="https://th.bing.com/th/id/R.7338a948c0b57efb0ef8be828be91885?rik=wX%2bhaMuam%2bnttA&pid=ImgRaw&r=0" draggable="false"alt="">
-    <img src="https://th.bing.com/th/id/OIP.Zpw7hfZLjqppBxOwlwIr5QHaDt?rs=1&pid=ImgDetMain" draggable="false">
-    <img src="https://th.bing.com/th/id/OIP.IuGGwdktXAgqcoeu3DWoqwHaEK?rs=1&pid=ImgDetMain" draggable="false" alt=""><p></p>
-  </div>
-
-  <div class="carousel-container">
-    <div class="carousel">
-      <!-- Imagens duplicadas para efeito de loop contínuo -->
-      <img src="https://m.media-amazon.com/images/S/pv-target-images/2f01f3ea957b378822c7aac932885fb1712799126fcd9bd192e74fc4d06dd545.jpg" draggable="false" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyW3UkRvAtSy-UUhFTtB2-22todMkph60gww&s" draggable="false" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtqpQe5BO1aVZehVLUEPGUg7K535YaRiCywg&s" draggable="false" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6oRj1XRXOHKP_Dvodj7_n-XOcYlNwJgVJIA&s" draggable="false" alt="">
-      <img src="https://tm.ibxk.com.br/2024/06/20/20162942209218.jpg" draggable="false" alt="">
-      <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpg" draggable="false" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReymymgD_tIXEZA0l1satVGRoyqcbRDERyOw&s" draggable="false" alt="">
-      <!-- Duplicação das imagens para efeito contínuo -->
-      <img src="https://m.media-amazon.com/images/S/pv-target-images/2f01f3ea957b378822c7aac932885fb1712799126fcd9bd192e74fc4d06dd545.jpg" draggable="false" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyW3UkRvAtSy-UUhFTtB2-22todMkph60gww&s" draggable="false" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtqpQe5BO1aVZehVLUEPGUg7K535YaRiCywg&s" draggable="false" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6oRj1XRXOHKP_Dvodj7_n-XOcYlNwJgVJIA&s" draggable="false" alt="">
-      <img src="https://tm.ibxk.com.br/2024/06/20/20162942209218.jpg" draggable="false" alt="">
-      <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpg" draggable="false" alt="">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReymymgD_tIXEZA0l1satVGRoyqcbRDERyOw&s" draggable="false" alt="">
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="episodio.html"><img src="https://www.tvtime.com/_next/image?url=https%3A%2F%2Fartworks.thetvdb.com%2Fbanners%2Ffanart%2Foriginal%2F79077-5.jpg&w=3840&q=75" class="d-block w-100" alt="azumanga">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Anime 1</h1>
+          <p>Temp 1.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://i1.wp.com/guiadoanime.com.br/wp-content/uploads/2023/12/A-enorme-inspiracao-de-Jujutsu-Kaisen-e-mais-evidente-do.jpg" class="d-block w-100" alt="jujutsu">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Jujutsu Kaisen</h1>
+          <p>Temp. 1-2</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/e0550c7d-bea4-11ed-aa6e-9587410378a2/naruto-classico.jpg" class="d-block w-100" alt="naruto">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Naruto</h1>
+          <p>Temp. 1-9</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <div class="">
 
-  </div>
-
-  <button class="control-button" onclick="rotateCarousel()">&#8594;</button>
-
-  <script>
-    const carousel = document.querySelector('.carousel');
-    const images = document.querySelectorAll('.carousel img');
-    const imageWidth = images[0].clientWidth + 20; // Largura da imagem + margem
-    let currentIndex = 0;
-
-    function rotateCarousel() {
-      const totalImages = images.length / 2; // Considerando as imagens duplicadas
-      currentIndex = (currentIndex + 1) % totalImages; // Gira para a próxima imagem
-      const distance = currentIndex * imageWidth; // Calcula a distância a ser percorrida
-      carousel.style.transform = `translateX(${-distance}px)`;
-
-      // Verifica se estamos na última imagem e "reseta" para criar o loop contínuo
-      if (currentIndex === totalImages - 1) {
-        setTimeout(() => {
-          carousel.style.transition = 'none'; // Remove a transição para que o salto não seja visível
-          currentIndex = 0; // Reseta para o início
-          carousel.style.transform = `translateX(0px)`; // Volta para a primeira imagem instantaneamente
-          setTimeout(() => {
-            carousel.style.transition = 'transform 1s ease'; // Reativa a transição para o próximo giro
-          }, 50); // Pequeno atraso para garantir que a transição seja aplicada corretamente
-        }, 1000); // Atraso após a transição suave para reiniciar o loop
-      }
-    }
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

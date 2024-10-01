@@ -13,6 +13,11 @@ img {
     box-shadow: 0px 0px 80px 20px rgb(39, 0, 22);
 }
 
+.mascote{
+    width: 680px;
+    
+}
+
 .form {
     position: absolute;
     top: 50%; 

@@ -88,23 +88,19 @@
     <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b5dc286fb64f7bdc8eaa47e36f079c74.jpe" draggable="false" alt=""><p></p>
    </div>
    <div class="title">
-    <img src="PDA-removebg-preview (1).png" (1).png (1).png"  draggable="false" alt="">
-   </div
-        <header></header>
-        <div id="itemToFade" class="fade">
+    <img src="PDA-removebg-preview (1).png"  draggable="false" alt="">
+   </div>
+        <div id="itemToFade" class="fade"> <!--div da caixa branca (LOGIN) -->
             <form id="loginForm">
-                <h3>Login</h3>
-                <input id="username" type="text" placeholder="Nome" required><p></p>
-                <input id="email" type="email" placeholder="Email" required><p></p>
-                <input id="password" type="password" placeholder="Senha" required><p></p>
+                <h3 class="loginform">Login</h3>
+                <input class="loginform" id="username" type="text" placeholder="Nome" required><p></p>
+                <input class="loginform" id="email" type="email" placeholder="Email" required><p></p>
+                <input class="loginform" id="password" type="password" placeholder="Senha" required><p></p>
                 <div class="sube">
-                    <input type="submit" value="Entrar">
+                    <a href="index.html"><input class="loginform" type="submit" value="Entrar"></a>>              
                 </div>
             </form>
-        </div>
-    </div>
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
+        <script>                        document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Impede o envio padrão do formulário
 
             // Obtém os valores dos campos
